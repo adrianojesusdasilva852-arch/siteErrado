@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adriano"> 
+    <meta name="description" content="sobrevivar com maior tempo possivel, e tenta escapa dos crânio que nasce, e você poder matar ele com a arma."> 
+    <link rel="icon" type="image/png" href="imagem/play.png">
+    <link rel="stylesheet" href="estilo.css">
+    <title>CurZon</title>
+</head>
+<body onresize="telaDoDispositivo()">
+
+    <!--menu-->
+    <nav id="Menu">
+        <h1 id="recorde"></h1>
+        <img src="imagemicon/TítuloDojogo.png" alt="CurZon" class="tituloDoJogo">
+        <button class="botaoDecomecaJogo" onclick="comecarJogo()"></button>
+        <button class="botaoDeDoar" onclick="irParaTelaDeDoar()">🎁</button>
+    </nav>
+
+    <!--jogo-->
+    <main id="Jogo">
+        <!--icon(-->
+        <img src="imagemicon/BarraDeVida.png" alt="barra de vida" class="barraDeVida">
+        <h2 id="ponto"></h2>
+        <img src="imagemicon/Relógio.png" alt="relogio" class="relogio">
+        <button class="botaoDeDoar" onclick="irParaTelaDeDoar()">🎁</button>
+        <button class="botaVoltajogo" onclick="carregarSite()"></button>
+        <!--icon)-->
+        <!--barra de vida(-->
+        <div class="barra_vida">
+            <div class="vida" id="vida"></div>
+        </div>
+        <!--barra de vida)-->
+        <div class="play">
+            <img src="imagem/arma.png" alt="arma" class="arma">
+        </div>
+    </main>
+
+    <!--tela perteu-->
+    <div id="telaPerteu">
+        <div class="boxTelaPerteu">
+            <img src="imagemicon/voceperteu.png" alt="voce perteu" class="vocePerteu">
+            <p id="pontucao"></p>
+            <div class="boxbotao">
+                <button class="botaoReiniciar" onclick="comecarJogo()"></button>
+                <button class="botaoVolta" onclick="carregarSite()"></button>
+            </div>
+        </div>
+        <button class="botaoDeDoar" onclick="irParaTelaDeDoar()">🎁</button>
+    </div>
+
+    <!--tela de doação-->
+    <div id="TelaDeDoar">
+        <button class="botoaDeVoltaParaMenu" onclick="carregarSite()"></button>
+        <div class="boxTelaDedoar">
+            <div class="boxTuturial">
+                <h1 style="text-align: center;
+                font-size: 40px; font-family: Arial, Helvetica, sans-serif;">Como jogar o jogo?</h1>
+                <p style="text-align: center;
+                font-size: 40px; margin-top: 10px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: black;">Para se movimentar, use as teclas <strong style="color:white;">WASD</strong> ou as <strong style="color:white;">setas</strong> do teclado. Para mirar, use o <strong style="color:white;">mouse</strong>, e para atirar, use o <strong style="color:white;">botão esquerdo do mouse</strong>, e para mata o inimigo tem que acerta <strong style="color:white;">5 bala nele.</strong></p>
+            </div>
+            <div class="doar">
+                <h1 style="text-align: center; font-size: 50px; font-family:Arial, Helvetica, sans-serif;"
+                >APOIA PROJETO</h1>
+                <p style="text-align: center; font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"
+                >Chave pix:6b55101a-ef13-4796-b1d1-ef045d4792c0</p>
+                <img style="width: 300px; margin: 0 auto;"
+                 src="imagem/grcodePix.png" alt="chave pix:6b55101a-ef13-4796-b1d1-ef045d4792c0">
+                <p style="text-align: center; font-size: 20px; font-family: Arial, Helvetica, sans-serif;"
+                >Você gostaria de apoiar este projeto? 
+                <br>Com sua ajuda, posso melhorar e evoluir o jogo cada vez mais.
+                <br>Com qual valor você gostaria de ajudar?🤗.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--tela do celula-->
+    <div id="TelaDeCelula">
+        <div class="mensagem">
+            <p style="color: rgb(21, 20, 20); font-size: 30px; font-family: Arial, Helvetica, sans-serif; text-align: center;margin-top: 10px;"
+            >Mil desculpas🙇‍♂️, mas este jogo não foi feito para este dispositivo, infelizmente. Este jogo só funciona em computadores. Mas, talvez futuramente, ele seja lançado para este dispositivo😉.</p>
+            <h1 style="text-align: center;margin:10px; font-size: 30px; font-family:Arial, Helvetica, sans-serif;"
+            >APOIA PROJETO</h1>
+            <p style="text-align: center; font-size: 17px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"
+            >Chave pix:6b55101a-ef13-4796-b1d1-ef045d4792c0</p>
+            <img style="width: 180px; margin: 0 auto;"
+            src="imagem/grcodePix.png" alt="chave pix:6b55101a-ef13-4796-b1d1-ef045d4792c0">
+            <p style="text-align: center; font-size: 17px; font-family: Arial, Helvetica, sans-serif;"
+            >Você gostaria de apoiar este projeto? 
+            <br>Com sua ajuda, posso melhorar e evoluir o jogo cada vez mais.
+            <br>Com qual valor você gostaria de ajudar?🤗.</p>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
